@@ -1,6 +1,6 @@
 {
     "name": "spotify-php-api-project",
-    "description": "A simple PHP API to communicate with the Spotify API.",
+    "description": "api php para comunicar com a Api do spotify.",
     "type": "project",
     "require": {
         "php": "^7.4 || ^8.0",

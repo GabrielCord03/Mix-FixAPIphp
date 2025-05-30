@@ -1,59 +1,48 @@
-# Spotify PHP API Project
-
-This project is a simple application that connects a frontend interface with the Spotify API through a PHP backend. The architecture is organized into two main parts: the API and the frontend.
-
-## Project Structure
-
-```
 spotify-php-api-project
 ├── api
 │   ├── public
-│   │   └── index.php          # Entry point for the API
+│   │   └── index.php          # Ponto de entrada da API
 │   ├── src
-│   │   ├── SpotifyService.php  # Handles communication with the Spotify API
-│   │   └── routes.php          # Defines API routes
-│   └── composer.json           # Composer configuration file
+│   │   ├── SpotifyService.php  # Comunicação com a API do Spotify
+│   │   └── routes.php          # Rotas da API
+│   └── composer.json           # Configuração do Composer
 ├── frontend
-│   ├── index.html              # Main HTML file for the frontend
+│   ├── index.html              # Página principal da interface
 │   ├── css
-│   │   └── style.css           # Styles for the frontend application
+│   │   └── style.css           # Estilos do frontend
 │   └── js
-│       └── app.js              # JavaScript code for the frontend application
-└── README.md                   # Project documentation
-```
+│       └── app.js              # Lógica JavaScript da aplicação
+└── README.md                   # Documentação do projeto
 
-## Setup Instructions
+## Como Usar
 
-1. **Clone the repository:**
+1. **Clonar o repositório:**
    ```
    git clone <repository-url>
    cd spotify-php-api-project
    ```
 
-2. **Install PHP dependencies:**
-   Navigate to the `api` directory and run:
+2. **Instalar dependências PHP:**
    ```
+   cd api
    composer install
    ```
 
-3. **Configure the Spotify API:**
-   You will need to set up your Spotify API credentials. Create a configuration file or set environment variables as needed.
+3. **Configurar credenciais do Spotify:**
+   Cadastre um app no Spotify Developer e configure as credenciais (pode ser por arquivo .env ou direto no código).
 
-4. **Run the API:**
-   You can use a local server like Apache or PHP's built-in server to run the API. For example:
+4. **Rodar o servidor da API:**
    ```
    php -S localhost:8000 -t public
    ```
 
-5. **Open the frontend:**
-   Open `frontend/index.html` in your web browser to access the application.
+5. **Abrir o frontend:**
+   Abra o arquivo `frontend/index.html` no navegador.
 
-## Usage Guidelines
+## Observações
 
-- The frontend communicates with the PHP API to fetch data from Spotify.
-- Ensure that you have valid Spotify API credentials to make requests.
-- Modify the `SpotifyService.php` file to add or change the methods for interacting with the Spotify API as needed.
+- A interface envia requisições para o backend PHP, que repassa para a API do Spotify.
 
-## Contributing
+- Você precisa de um token válido do Spotify para funcionar corretamente.
 
-Feel free to submit issues or pull requests if you have suggestions or improvements for the project.
+- Personalize o arquivo SpotifyService.php conforme suas necessidades.
