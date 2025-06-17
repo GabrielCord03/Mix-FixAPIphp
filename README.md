@@ -170,3 +170,5 @@ spotify-php-api-project
 
 - Personalize o arquivo SpotifyService.php conforme suas necessidades.
 
+## Grupo
+  Gabriel Cordeiro Alves, Caio de Vasconcelos Ramalho, Diógenes Lópes Dias de Souza.
