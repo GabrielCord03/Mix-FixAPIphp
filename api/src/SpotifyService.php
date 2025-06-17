@@ -5,6 +5,7 @@ class SpotifyService {
     private $clientSecret;
     private $accessToken;
     private $apiUrl = 'https://api.spotify.com/v1/';
+    
 
     public function __construct($clientId, $clientSecret) {
         $this->clientId = $clientId;
